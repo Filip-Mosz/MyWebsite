@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:fragment="menu" style="background: khaki; margin: 8px; width: 10%; align-content: center; max-height: 20rem; float: right">
+
+    <div class="menu-content">
+        <p><a href="/home" th:text="Main" class="a-forced">Homepage</a></p>
+        <p><a href="/about" th:text="CV" class="a-forced">About Me</a></p>
+        <p><a href="/projects" th:text="projekty" class="a-forced ">archery calculator</a></p>
+        <p><a th:href="@{/cookies}" class="a-forced">Kukis</a></p>
+    </div>
+
+</nav>
+</body>
+</html>
