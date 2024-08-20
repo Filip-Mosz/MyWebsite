@@ -1,10 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Filip Moszczynski's Privete page</title>
+    <title>Filip Moszczyński</title>
 </head>
-<body>
-<h1>INDEX</h1>
+<body style="margin: 0">
+<div style="display: flex; flex-direction: row;">
+    <div style="background: #d8d2dd; width: 100vw;">
+        <div th:replace="~{parts/menu}" > MENU </div>
+        <div>
+
+            <div th:unless="${pro} == false">
+                <p>Witam na mojej stronie; mojej wizytówce; moim kawałku internetu, gdzie wszystko jest tak ja chcę... o ile prawo nie stanowi inaczej.</p>
+                <p></p>
+                <p>Jestem wiecznie raczkującym - bo zawsze można nauczyć się więcej - programistą, zapalonym łucznikiem tradycyjnym i rekonstruktorem "okołogrunwaldzkim". Na tej stronie najważniejsze jest to pierwsze.</p>
+                <p>.</p>
+                <p>Na razie mój stack technologiczny opiera się na Javie, Springu i Thymeleafie. Prócz tego skubnąłem też Hibernate'a, sprawnie operuję SQLem, HTMLen i CSS na tyle, żeby zrobić taką stronę jak widać; żadnej części ciała nie urywa</p>
+                <p>Z tego co planuję to chciałbym się nauczyć TypeScript'a i Reacta. Kiedy to nastąpi, ciężko powiedzieć</p>
+                <p>Obecnie strona śmiga w Thymeleafie, ale jak tylko ogarnę Reacta to go użyję. Thymeleaf jest prosty, dlatego go tu używam.</p>
+            </div>
+<!--     casual about div end       -->
+
+            <div th:unless="${pro} == true">
+                <p>nie widać</p>
+                <div>
+                    <h1>O MNIE</h1>
+                    <div>
+                        <p>Jestem programistą Java szukającym pracy w branży IT. Moje pierwsze spotkanie z programowaniem miało miejsce w szkole policealnej i zrozumiałem, że to coś dla mnie.</p>
+
+                        <p>Teraz, po kilku latach przerwy, cały wolny czas mogę poświęcić temu tematowi. Swoją wymarzoną karierę postanowiłem rozpocząć od bootcampu „Java od podstaw” prowadzonego przez Software Development Academy. Co poza Javą pozwoliło mi poznać zestaw przydatnych technologii: takich jak SQL, Hibernate czy Spring, a także podstawy frontendu.</p>
+
+                        <p>Myślę o sobie jako zdeterminowanym, by zdobyć wiedzę; obserwując, słuchając i eksperymentując. Mówiącym otwarcie o moim punkcie widzenia. Czuję się gotowy, aby wesprzeć mój nowy zespół w mojej pierwszej pracy w branży IT!</p>
+                    </div>
+                </div>
+                <div>
+                    <h1>EDUKACJA</h1>
+                    <div>
+                        <h4>Software Development Academy</h4>
+                        <p>kurs "Java od podstaw" (327h)</p>
+                        <p>04/2020 - 01/2021</p>
+                        <p>Zakres tematyczny</p>
+                        <ul>
+                            <li>Git</li>
+                            <li>Java</li>
+                            <li>Testy jednostkowe (JUnit) i TDD</li>
+                            <li>SQL</li>
+                            <li>JDBC i JPA/Hibernate</li>
+                            <li>Spring</li>
+                            <li>HTML, CSS</li>
+                            <li>podstawy JavaScript'u i Angulara</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Szkoła policealna w Centrum Kształcenia Ustawicznego</h4>
+                        <p>Technik informatyk 2007 - 2009</p>
+                        <p>umiejętnosci potwierdzone certyfikatem URS nr. 19066</p>
+                    </div>
+                </div>
+                <div>
+                    <h1>DOŚWIADCZENIE ZAWODOWE</h1>
+                    <div>
+                        <h4>Junior DevOps Engineer</h4>
+                        <p>HiQPoland | 03/2022 - obecnie</p>
+                        <ul>
+                            <li>praca z platformą Frends</li>
+                            <li>tworzenie zadań (metody poszerzające funkcjonalność) dla platformy Frends w języku C#</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Programista Java Web</h4>
+                        <p>Anet sp z o.o. | 11/2021 - obecnie (niepełny etat)</p>
+                        <ul>
+                            <li>Stworzenie strony firmy</li>
+                            <li>Stworzenie i utrzymanie strony <a href="https://www.bestmix.pl" target="_blank">bestmix.pl</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Strona <a href="https://www.bestmix.pl" target="_blank">Bestmix</a> (zlecenie)</h4>
+                        <p>Anet sp z o. o. | 2021</p>
+                        <ul>
+                            <li>Backend (Spring boot + JSON) + Frontend (Thymeleaf/HTML + CSS) strony internetowej dla klienta.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Szlifierz - Pomocnik kowala</h4>
+                        <p>Ensifer - Jan Chodkiewicz | 11/2016 - 03/2022</p>
+                        <ul>
+                            <li>szlifowanie ostrzy do DESW i metalowych elementów oprawy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Pomocnik Żaglomistrza</h4>
+                        <p>Sail Service | 04/2013 - 10/2016</p>
+                        <ul>
+                            <li>Ręczne wykańczanie żagli i przygotowanie produktów do wysyłki.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Staż - Pomocnik biurowy</h4>
+                        <p>Gdański Archipelag Kultury | 07/2012 - 11/2012</p>
+                        <ul>
+                            <li>Obsługa przepustek na festiwalu "Gdańsk Dźwiga Muzę 2012"</li>
+                            <li>Pomoc techniczna przy 3. Festiwalu Monodramu "Monoblok"</li>
+                            <li>bierząca pomoc w pracach biurowych w gabinecie dyrektora</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+<!--     CV div end       -->
+        </div>
+    </div>
+</div>
 </body>
 </html>
