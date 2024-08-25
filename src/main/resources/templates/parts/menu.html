@@ -11,7 +11,7 @@
     <link href="https://fonts.google.com/specimen/Fira+Sans/about?subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-<nav th:fragment="menu" style="background: #808090; width: 20rem; align-content: center; top: 0; left: 0; bottom: 0; float: left; padding: 2px; height: 100vh">
+<nav th:fragment="menu" style="background: #808090; width: 20rem; align-content: center; top: 0; left: 0; bottom: 0; float: left; padding: 2px; margin-right: 12px; height: 100vh; position: sticky">
 
     <div class="menu-content" style="align-content: center">
         <p style="font-size: xx-large; font-family: 'Fira Sans',serif" class="link-no-decoration">Filip Moszczyński</p>
@@ -19,7 +19,7 @@
             <img th:src="@{/img/foto.JPG}" alt="ja" style="height: 10rem; padding: 10% 25%;" />
         </div>
         <ul style="list-style-type: none; text-decoration: none">
-            <li><a th:href="@{/home}" th:text="Main" class="a-forced link-no-decoration">Homepage</a></li>
+            <li><a th:href="@{/}" th:text="Main" class="a-forced link-no-decoration">Homepage</a></li>
             <li><a th:href="@{/about}" th:text="CV" class="a-forced link-no-decoration">About Me</a></li>
             <li><a th:href="@{/projects}" th:text="Projekty" class="a-forced link-no-decoration">archery calculator</a></li>
             <li><a th:href="@{/cookies}" class="a-forced link-no-decoration">Ciasteczka</a></li>
